@@ -2,8 +2,6 @@
 Building simple CRM system app, using ReactJS
 
 # Example:
-![Example](https://github.com/therealpanda98/WeatherApp-ReactJS/blob/master/Screenshots/main.gif)
+![Example](https://github.com/dima-webdev/simpleCRM/blob/master/public/screenshot.png)
 
-## Edit this lines of code:# simpleCRM
-# simpleCRM
-# simpleCRM
+Information become update
