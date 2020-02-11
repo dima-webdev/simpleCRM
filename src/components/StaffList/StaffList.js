@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import StaffCard from '../../components/StaffCard/StaffCard'
-import { Row } from 'react-bootstrap'
+import { Row, Spinner } from 'react-bootstrap'
 import '../../components/StaffList/StaffList.css'
 // import {Link} from 'react-router-dom'
 // import StaffCardPage from '../../pages/StaffCardPage/StaffCardPage'
@@ -50,7 +50,11 @@ class StaffList extends Component {
         const {isLoading, error, staff} = this.state
         /** If 'true' render 'Loading' text on the screen */
         if (isLoading) {
-            return <p>Loading...</p>
+            return (
+                <Spinner animation="border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+            )
         }
         if (error) {
             return (

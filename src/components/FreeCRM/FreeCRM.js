@@ -1,11 +1,12 @@
 import React from 'react'
 import '../../components/FreeCRM/FreeCRM.css'
+import '../../pages/AccountPage/AccountPage.css'
 import NavBar from '../../components/NavBar/NavBar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from '../../pages/HomePage/Home'
 import About from '../../pages/AboutPage/About'
 import Staff from '../../pages/StaffPage/Staff'
-import StaffCardPage from '../../pages/StaffCardPage/StaffCardPage'
+import AccountPage from '../../pages/AccountPage/AccountPage'
 
 /** The main app FreeCRM function */
 export default function FreeCRM() {
@@ -19,7 +20,8 @@ export default function FreeCRM() {
           <Route path={'/'} exact component={Home} />
           <Route path={'/about'} component={About} />
           <Route path={'/staff'} component={Staff} />
-          <Route path='/:handle' component={StaffCardPage} />
+          <Route path={'/account'} component={AccountPage} />
+          {/* <Route path='/:handle' component={StaffCardPage} /> */}
         </Switch>
       </div>
     </Router>

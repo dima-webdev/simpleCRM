@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-// import StaffCardPage from '../../pages/StaffCardPage/StaffCardPage'
+// import AccountPage from '../../pages/AccountPage/AccountPage'
 
 /**
  * Represents a sraff item in card
@@ -24,7 +24,7 @@ export default function StaffCard({name, email, location, picture, nat, id}) {
                     </Card.Text>
                     <Card.Link href={'mailto:' + email}>{email}</Card.Link><br/><br/>
                     <Link to={{
-                        pathname: `/staffcardpage/${name.first}`,
+                        pathname: `/accountpage/${name.first}`,
                         state: {
                             nameFirst: `${name.first}`,
                             imgURL: `${picture.large}`

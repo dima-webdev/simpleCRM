@@ -15,6 +15,7 @@ const NavBar = () => {
                     <Link to="/" className="nav-link">Главная</Link>
                     <Link to="/about" className="nav-link">О нас</Link>
                     <Link to="/staff" className="nav-link">Сотрудники</Link>
+                    <Link to="/account" className="nav-link">Страница сотрудника - тест</Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Поиск сотрудника..." className="mr-sm-2" />
