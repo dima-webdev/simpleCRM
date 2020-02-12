@@ -26,8 +26,11 @@ export default function StaffCard({name, email, location, picture, nat, id}) {
                     <Link to={{
                         pathname: `/accountpage/${name.first}`,
                         state: {
-                            nameFirst: `${name.first}`,
-                            imgURL: `${picture.large}`
+                            name: `${name.first}`,
+                            imgURL: `${picture.large}`,
+                            location: `${location.city}`,
+                            email: `${email}`,
+                            lastName: `${name.last}`
                         }
                     }}
                     >
