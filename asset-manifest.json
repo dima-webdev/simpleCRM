@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/simpleCRM/static/css/main.a98b30cb.chunk.css",
+    "main.js": "/simpleCRM/static/js/main.53431cfd.chunk.js",
+    "main.js.map": "/simpleCRM/static/js/main.53431cfd.chunk.js.map",
+    "runtime-main.js": "/simpleCRM/static/js/runtime-main.db32b380.js",
+    "runtime-main.js.map": "/simpleCRM/static/js/runtime-main.db32b380.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/simpleCRM/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.407f1393.chunk.js": "/simpleCRM/static/js/2.407f1393.chunk.js",
+    "static/js/2.407f1393.chunk.js.map": "/simpleCRM/static/js/2.407f1393.chunk.js.map",
+    "index.html": "/simpleCRM/index.html",
+    "precache-manifest.c84afddabda318cf0c3567bd0e05d20f.js": "/simpleCRM/precache-manifest.c84afddabda318cf0c3567bd0e05d20f.js",
+    "service-worker.js": "/simpleCRM/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/simpleCRM/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.a98b30cb.chunk.css.map": "/simpleCRM/static/css/main.a98b30cb.chunk.css.map",
+    "static/js/2.407f1393.chunk.js.LICENSE": "/simpleCRM/static/js/2.407f1393.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db32b380.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.407f1393.chunk.js",
+    "static/css/main.a98b30cb.chunk.css",
+    "static/js/main.53431cfd.chunk.js"
+  ]
+}
