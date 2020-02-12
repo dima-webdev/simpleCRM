@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-// import AccountPage from '../../pages/AccountPage/AccountPage'
 
 /**
  * Represents a sraff item in card
@@ -23,6 +22,7 @@ export default function StaffCard({name, email, location, picture, nat, id}) {
                         {location.city}
                     </Card.Text>
                     <Card.Link href={'mailto:' + email}>{email}</Card.Link><br/><br/>
+                     {/* Send values to common account page template */}
                     <Link to={{
                         pathname: `/accountpage/${name.first}`,
                         state: {

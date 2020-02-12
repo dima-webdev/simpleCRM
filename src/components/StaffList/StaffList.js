@@ -3,8 +3,6 @@ import axios from 'axios'
 import StaffCard from '../../components/StaffCard/StaffCard'
 import { Row, Spinner } from 'react-bootstrap'
 import '../../components/StaffList/StaffList.css'
-// import {Link} from 'react-router-dom'
-// import StaffCardPage from '../../pages/StaffCardPage/StaffCardPage'
 
 /** API link from randomuser.me */
 const API = 'https://randomuser.me/api/?results=20'
@@ -67,7 +65,6 @@ class StaffList extends Component {
                     {
                         staff.map((user, i) => 
                             <StaffCard key={i} {...user} />
-                            // <Link to="/staffpage"><p>{user.name}</p></Link>
                         )
                     }
                     </Row>
