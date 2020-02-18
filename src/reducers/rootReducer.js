@@ -1,4 +1,4 @@
-import { GET_USER, FILTER_USER } from '../actions/actions'
+import { GET_USER, FILTER_USER } from '../actions/actionsTypes'
 
 /* Our initial state with 3 default staff users */
 
