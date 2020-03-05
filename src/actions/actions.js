@@ -1,9 +1,9 @@
-import { GET_USER, FILTER_USER } from './actions/actionsTypes'
+import { GET_USER } from '../actions/actionsTypes'
 
 /* Action function to get users from API function */
 export function getUser(newUser) {
     return {
-        type: 'GET_USER',
+        type: GET_USER,
         newUser
     }
 }
@@ -12,9 +12,9 @@ export function getUser(newUser) {
  * Action function to filter data
  */
 
-export function filterUser(text) {
-    return {
-        type: 'FILTER_USER',
-        text
-    }
-}
+// export function filterUser(text) {
+//     return {
+//         type: 'FILTER_USER',
+//         text
+//     }
+// }

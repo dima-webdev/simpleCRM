@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Col, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Card, Col } from 'react-bootstrap'
+// import { Link } from 'react-router-dom'
 
 /**
  * Represents a sraff item in card
@@ -13,19 +13,22 @@ import { Link } from 'react-router-dom'
 
 const picCircleStyles = {
     borderRadius: '50%',
-    // width: '100px',
-    // height: '100px'
+    marginBottom: '10px'
+}
+
+const cardMarginBottom = {
+    marginBottom: '15px'
 }
 
 export default function StaffCard({name, email, location, picUrl}) { // , picture, nat, id
     return (
         <Col md={3}>
-            <Card>
+            <Card style={cardMarginBottom}>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
+                    <img src={picUrl} alt="pic" style={picCircleStyles} /> 
                     <Card.Text>{email}</Card.Text>
                     <Card.Text>{location}</Card.Text>
-                    {/* <img src={picUrl} alt="pic" style={picCircleStyles} />  */}
                 </Card.Body>
             </Card>
         </Col>
