@@ -7,19 +7,19 @@ const initialState = {
         {
             name: 'Steve Jobs',
             email: 'stevejobs@apple.com',
-            picUrl: 'https://cms.qz.com/wp-content/uploads/2019/03/AP_070109057953.jpg?quality=75&strip=all&w=1400',
+            picUrl: './images/pic-jobs.jpg',
             location: 'US'
         },
         {
             name: 'Pavel Durov',
             email: 'paveldurov@telegram.com',
-            picUrl: 'https://cdn5.vedomosti.ru/crop/image/2018/9/1elir3/original-1tkp.jpg?height=609&width=1082',
+            picUrl: './images/pic-durov.png',
             location: 'RU'        
         },
         {
             name: 'Oleg Tinkoff',
             email: 'olegtinkof@tinkoff.ru',
-            picUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Oleg_Tinkov_%28office%29.jpeg',
+            picUrl: './images/pic-tinkov.jpg',
             location: 'RU'
         }
     ],
@@ -29,7 +29,7 @@ const initialState = {
 
 /* Reducer function */
 
-const rootReducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_USER:
             let newState = {...state}
@@ -40,9 +40,10 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 filter: action.filter
             }
-            default:
-                return state
+        default:
+            return state
     }
 }
+
 
 export default rootReducer
