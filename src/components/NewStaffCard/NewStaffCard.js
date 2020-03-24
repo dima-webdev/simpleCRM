@@ -27,6 +27,10 @@ class NewStaffCard extends Component {
                 })
     }
 
+    componentDidMount() {
+        return null
+    }
+
     render() {
 
         const { isLoading } = this.props
