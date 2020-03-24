@@ -20,7 +20,7 @@ class NewStaffCard extends Component {
                     let email = url.email
                     let location = url.nat
                     
-                    this.props.getUser({ name, email, location, picUrl }) 
+                    this.props.getUser({ name, email, location, picUrl })  
                 })
                 .catch(error => {
                     console.error("error: ", error)
